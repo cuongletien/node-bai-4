@@ -1,0 +1,15 @@
+form(action="/todos" , method="GET")
+  input(
+    type='text'
+    name='q'
+  )
+  button(type='button' class='btn') search
+form(action="/todos/create" , method="POST")
+  input(
+    type='text'
+    name='todo'
+  )
+  button(type='button' class='btn') create
+ul
+ each list in datas
+   li= list
